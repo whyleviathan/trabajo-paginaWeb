@@ -39,10 +39,12 @@ section{
 
 header{
     position: fixed;
+    z-index: 100;
+    background: var(--background-color);
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0px 1px 4px hsl(0 4% 15% / 10%);
+    box-shadow: 0px 4px 8px hsla(0, 2%, 8%, 0.1);
    
 }
 
@@ -62,17 +64,62 @@ header{
     cursor: pointer;
 }
 
+/* Seccion de la tienda */
 .section-title{
-    font-size: 1.5rem;
+    font-size: 24px;
     text-align: center;
     font-weight: 600;
+    margin-bottom: 24px;
 }
 
 .shop{
-    margin-top: 2rem;
+    margin-top: 32px;
 }
 
 .content-shop{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    gap: 24px;
+}
+
+.product-card{
+    position: relative;
+}
+
+.product-card:hover{
+    padding: 10px;
+    border: 1px solid gray;
+    transition: 0.5s;
+}
+
+.product-image{
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.product-title{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.price{
+    font-weight: 500;
+}
+
+.bx-cart-add{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--text-color);
+    padding: 12px;
+    color: var(--background-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.bx-cart-add:hover{
+    transition: 0.5s;
+    background: green;
 }
