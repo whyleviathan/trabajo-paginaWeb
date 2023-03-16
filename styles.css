@@ -161,12 +161,17 @@ header{
  .cart-container{
     position: fixed;
     top: 0; 
-    right: 0;
+    right: -100%;
+    transition: 0.3s;
     width: 360px;
     min-height: 100vh;
     padding: 25px;
     background: white;
     box-shadow: -2px 0 8px hsla(0 8% 15% / 10%);
+}
+
+.cart-container .active{
+    right: 0;
 }
 
 .cart-title{
@@ -261,3 +266,5 @@ header{
     color: var(--text-color);
     cursor: pointer;
 }
+
+
