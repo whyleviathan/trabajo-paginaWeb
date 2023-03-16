@@ -128,3 +128,59 @@ header{
 /* Slider */
 
 
+.category-container {
+    height: 80px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 120px;
+}
+
+.category-box{
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.category-box:hover{
+    padding: 5px;
+    border: 1px solid gray;
+    transition: 0.5s;
+}
+
+.category-box img{
+    width: 100%;
+    max-width: 25px;
+    max-height: 25px;
+    
+}
+
+/* Carro de compras */
+ .cart-container{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    width: 360px;
+    min-height: 100vh;
+    padding: 25px;
+    background: white;
+    box-shadow: -2px 0 8px hsla(0 8% 15% / 10%);
+}
+
+.cart-title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.cart-card{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+}
+    
+
