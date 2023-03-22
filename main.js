@@ -1,7 +1,6 @@
-let cartIcon = document.querySelector('#cart-icon')
-let cart = document.querySelector(".cart-container")
-let cartClose = document.querySelector("#close-cart")
+const cartContainer = document.getElementById('cart-container');
 
-cartIcon.onclick = () => {
-    cart.classList.add("active");
-};
+cartContainer.addEventListener('click', () => {
+  cartContainer.classList.toggle('show-cart');
+});
+
