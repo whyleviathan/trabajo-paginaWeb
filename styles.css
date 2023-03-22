@@ -60,9 +60,9 @@ header{
 }
 
 #cart-button{
-    font-size: 1.8rem;
+    font-size: 34px;
     cursor: pointer;
-    width: 100px;
+    ;
 }
 
 /* Seccion de la tienda */
@@ -124,10 +124,6 @@ header{
     transition: 0.5s;
     background: green;
 }
-
-
-/* Slider */
-
 
 
 
@@ -232,6 +228,7 @@ header{
     transition: 0.5s
 }
 
+/* Cerrar carro */
 #close-cart{
     position: absolute;
     top: 16px;

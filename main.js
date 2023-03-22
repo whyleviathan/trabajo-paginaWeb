@@ -1,6 +1,17 @@
-const cartContainer = document.getElementById('cart-container');
+// Abrir el carro
+const cartButton = document.getElementById('cart-button');
+const cartContainer = document.querySelector('.cart-container');
 
-cartContainer.addEventListener('click', () => {
-  cartContainer.classList.toggle('show-cart');
+cartButton.addEventListener('click', () => {
+  cartContainer.classList.add('show-cart');
 });
+
+// Cerrar el carro
+const closeCart =document.getElementById("close-cart");
+
+closeCart.addEventListener("click", () => {
+    cartContainer.classList.remove("show-cart")
+})
+
+
 
