@@ -56,8 +56,9 @@ header{
 }
 
 .logo{
-    font-size: 18px; 
-    color: black;
+    width: 100%;
+    max-width: 200px;
+    max-height: 115px;
 }
 
 #cart-button{
