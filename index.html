@@ -72,8 +72,27 @@
     <section class="shop container">
         <h2 class="section-title">Productos</h2>
 
+        <!-- filtros  -->
+        <div class="filters">
+          <select class="dropdown" id="genre-filter">
+            <option value="all">Todos</option>
+            <option value="men">Hombres</option>
+            <option value="women">Mujeres</option>
+          </select>
+          
+          <select class="dropdown" id="price-filter">
+            <option value="all">Todos los precios</option>
+            <option value="0-100">$0 - $100</option>
+            <option value="100-500">$100 - $500</option>
+            <option value="500+">Más de $500</option>
+          </select>
+          
+          </select>
+      </div>
+
+      <!-- productos  -->
         <div class="content-shop">
-            <article class="product-card">
+            <article class="product-card" data-genre="men">
                 <img src="images/product9.jpg" alt="" class="product-image">
                 <h2 class="product-title">Pantalón gris</h2>
                 <span class="price">$850</span>
@@ -83,7 +102,7 @@
             <article class="product-card">
                 <img src="images/product6.jpg" alt="" class="product-image">
                 <h2 class="product-title">Gorra Adidas negra</h2>
-                <span class="price">$50</span>
+                <span class="price">$490</span>
                 <i class='bx bx-cart-add'></i>
             </article>
 
@@ -94,38 +113,91 @@
                 <i class='bx bx-cart-add'></i>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" data-genre="men">
                 <img src="images/product3.jpg" alt="" class="product-image">
                 <h2 class="product-title">Abrigo</h2>
                 <span class="price">$2150</span>
                 <i class='bx bx-cart-add'></i>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" data-genre="men">
                 <img src="images/product1.jpg" alt="" class="product-image">
                 <h2 class="product-title">T-shirt negro</h2>
-                <span class="price">$1250</span>
+                <span class="price">$480</span>
                 <i class='bx bx-cart-add'></i>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" data-genre="women">
                 <img src="images/product2.jpg" alt="" class="product-image">
                 <h2 class="product-title">Pantalón deportivo mujer</h2>
-                <span class="price">$1200</span>
+                <span class="price">$4200</span>
                 <i class='bx bx-cart-add'></i>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" data-genre="women">
+              <img src="images/vestidorojo.jpg" alt="" class="product-image">
+              <h2 class="product-title">Vestido corto rojo</h2>
+              <span class="price">$2100</span>
+              <i class='bx bx-cart-add'></i>
+          </article>
+            
+          <article class="product-card" data-genre="women">
+              <img src="images/vestidoverde.jpg" alt="" class="product-image">
+              <h2 class="product-title">Vestido verde</h2>
+              <span class="price">$5200</span>
+              <i class='bx bx-cart-add'></i>
+          </article>
+
+          <article class="product-card" data-genre="women">
+            <img src="images/vestidoazul.jpg" alt="" class="product-image">
+            <h2 class="product-title">Vestido corto azul</h2>
+            <span class="price">$2200</span>
+            <i class='bx bx-cart-add'></i>
+        </article>
+
+          <article class="product-card" data-genre="women">
+            <img src="images/vestidocamisero.jpg" alt="" class="product-image">
+            <h2 class="product-title">Vestido camisero con estampado</h2>
+            <span class="price">$1200</span>
+            <i class='bx bx-cart-add'></i>
+        </article>
+
+          <article class="product-card" data-genre="women">
+            <img src="images/vestidoabertura.jpg" alt="" class="product-image">
+            <h2 class="product-title">Vestido con abertura</h2>
+            <span class="price">$2200</span>
+            <i class='bx bx-cart-add'></i>
+        </article>
+
+            <article class="product-card" data-genre="men">
                 <img src="images/product10.jpg" alt="" class="product-image">
                 <h2 class="product-title">Pantalón deportivo hombre</h2>
-                <span class="price">$3150</span>
+                <span class="price">$4150</span>
+                <i class='bx bx-cart-add'></i>
+            </article>
+            <article class="product-card" data-genre="men">
+                <img src="images/hombrejearsy.jpg" alt="" class="product-image">
+                <h2 class="product-title">Hombres jersey</h2>
+                <span class="price">$2150</span>
+                <i class='bx bx-cart-add'></i>
+            </article>
+            <article class="product-card" data-genre="men">
+                <img src="images/abrigohombre.jpg" alt="" class="product-image">
+                <h2 class="product-title">Abrigp hombre</h2>
+                <span class="price">$2150</span>
+                <i class='bx bx-cart-add'></i>
+            </article>
+            <article class="product-card" data-genre="men">
+                <img src="images/sueter.jpg" alt="" class="product-image">
+                <h2 class="product-title">Sueter</h2>
+                <span class="price">$1150</span>
                 <i class='bx bx-cart-add'></i>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" >
                 <img src="images/product11.jpg" alt="" class="product-image">
                 <h2 class="product-title">Tenis</h2>
-                <span class="price">$2300</span>
+                <span class="price">$499</span>
                 <i class='bx bx-cart-add'></i>
             </article>
 
@@ -140,9 +212,7 @@
      
 </body>
 <footer>
-    <div class="container">
-      <p>Derechos Reservados &copy; 2023</p>
-    </div>
+    
     <div class="container footer-container">
       <div class="footer-section">
         <h3>Tienda de Ropa</h3>

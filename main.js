@@ -128,3 +128,35 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 
 }
+
+const genreFilter = document.getElementById("genre-filter");
+const priceFilter = document.getElementById("price-filter");
+const productCards = document.querySelectorAll(".product-card");
+
+function filterProducts() {
+  const genreValue = genreFilter.value;
+  const priceValue = priceFilter.value;
+
+  productCards.forEach((product) => {
+    const productGenre = product.getAttribute("data-genre");
+    const productPrice = parseFloat(product.querySelector(".price").textContent.substring(1));
+
+    let displayProduct = true;
+
+    if (genreValue !== "all" && productGenre !== genreValue) {
+      displayProduct = false;
+    }
+
+    if (priceValue !== "all") {
+      const [minPrice, maxPrice] = priceValue.split("-");
+      if (productPrice < parseFloat(minPrice) || (maxPrice && productPrice > parseFloat(maxPrice))) {
+        displayProduct = false;
+      }
+    }
+
+    product.style.display = displayProduct ? "block" : "none";
+  });
+}
+
+genreFilter.addEventListener("change", filterProducts);
+priceFilter.addEventListener("change", filterProducts);

@@ -67,6 +67,10 @@ header{
 }
 
 /* Seccion de la tienda */
+
+
+
+  
 .section-title{
     font-size: 24px;
     text-align: center;
@@ -77,7 +81,38 @@ header{
 .shop{
     margin-top: 32px;
 }
-
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .dropdown {
+    width: 170px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 8px;
+  }
+  
+  .dropdown option {
+    background-color: #fff;
+    color: #333;
+    font-weight: normal;
+  }
+  
+  .dropdown:focus,
+  .dropdown:hover {
+    background-color: #e0e0e0;
+    color: #000;
+  }
+ 
+  
 .content-shop{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px,auto));
