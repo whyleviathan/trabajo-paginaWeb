@@ -29,4 +29,4 @@ Boxicons for the shopping cart and exit icons.
 
 Readme
 
-Readme created by Oscar Osvaldo Rivera Contreras.
+This Readme was created by Oscar Osvaldo Rivera Contreras.
