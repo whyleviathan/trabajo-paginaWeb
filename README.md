@@ -26,3 +26,7 @@ Contributing
 This template was created by Oscar Osvaldo Rivera Contreras, Emanuel Paulino, Ruth Esther, Najelys Charles, Angel Yassel, David Rosario and Eva German, and uses the following external resources:
 
 Boxicons for the shopping cart and exit icons.
+
+Readme
+
+Readme created by Oscar Osvaldo Rivera Contreras.
