@@ -13,8 +13,11 @@ Features
 The web store includes the following features:
 
 Navigation bar: The navigation bar contains the logo and links to different sections of the website, including the shopping cart.
+
 Shopping cart: The shopping cart allows users to add and remove items from the cart. It displays the product name, price, and quantity of each item and calculates the total price of all the items in the cart. The shopping cart can be opened and closed by clicking on the cart button or the close button.
+
 Product section: The product section displays all the available products with their name, image, price, and a button to add them to the shopping cart. The products can be filtered by genre and price range using the filters located above the products.
+
 Slideshow: The slideshow displays different images of the products and can be controlled by clicking on the next and previous buttons or the dots.
 
 Usage
